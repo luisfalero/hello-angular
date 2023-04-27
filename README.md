@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # Deploy Openshift
 
-Add **Containerfile** and **nginx.conf**
+Add **Dockerfile** and **nginx.conf**
 
 ## Local
 

@@ -66,7 +66,7 @@ oc new-project angular
 ```
 
 ```shell
-oc new-app --name hello-angular \ 
+oc new-app --name hello-angular \
   https://github.com/luisfalero/hello-angular.git \
   --strategy=docker --as-deployment-config
 ```
@@ -78,5 +78,5 @@ oc create route edge --service hello-angular
 Browser it
 
 ```shell
-oc get route/hello-angular -o jsonpath='{.spec.host}
+oc get route/hello-angular -o jsonpath='{.spec.host}'
 ```

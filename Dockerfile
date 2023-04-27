@@ -11,7 +11,7 @@ USER 1001
 
 FROM registry.access.redhat.com/ubi8/nginx-120:1-100
 ARG FILE=/urs/src/app
-ARG PROJECT=hello-angular
+ARG PROJECT=my-first-project
 COPY --from=build-stage $FILE/dist/$PROJECT/ .
 ADD ./nginx.conf /etc/nginx/nginx.conf
 EXPOSE 8080
